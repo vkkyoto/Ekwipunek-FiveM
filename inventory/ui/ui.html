@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="box">
+            <div class="header" id="header">
+                <div class="name">
+                    <div class="s1">.</div>EKWIPUNEK
+                </div>
+                <i class="fa-solid fa-circle-xmark close" onClick="closePrimaryMenu()"></i>
+            </div>
+            <div class="container">
+            </div>
+            <div class="header header-kieszenie" id="header-kieszenie">
+                <div class="name name-kieszenie">
+                    <div class="s1">.</div>KIESZENIE
+                </div>
+                <div class="kieszenie-infosy">
+                    <p id="kieszenie-infosy-tekst">Aby dodać przedmiot do kieszeni, najedź na niego kursorem i kliknij klawisz 1, 2, 3, 4 lub 5 na klawiaturze</p>
+                </div>
+            </div>
+            <div class="kieszenie" id="kieszenie">
+                <div class="kieszen" id="kieszen-1" onClick="removeItemFromPocket(1)">
+                    <div class="kieszen-numer">1</div>
+                </div>
+                <div class="kieszen" id="kieszen-2" onClick="removeItemFromPocket(2)">
+                    <div class="kieszen-numer">2</div>
+                </div>
+                <div class="kieszen" id="kieszen-3" onClick="removeItemFromPocket(3)">
+                    <div class="kieszen-numer">3</div>
+                </div>
+                <div class="kieszen" id="kieszen-4" onClick="removeItemFromPocket(4)">
+                    <div class="kieszen-numer">4</div>
+                </div>
+                <div class="kieszen" id="kieszen-5" onClick="removeItemFromPocket(5)">
+                    <div class="kieszen-numer">5</div>
+                </div>
+            </div>
+            <div class="prompt">
+                <p>Podaj ilość:</p>
+                <input type="text" class="promptInput">
+                <a href="#!" class="acceptPrompt"></a>
+            </div>
+            <div class="prompt-confirm">
+                <p>Czy jesteś pewny?</p>
+                <a href="#!" class="acceptPrompt2">Tak</a>
+                <a href="#!" class="declinePrompt">Nie</a>
+            </div>
+            <div class="nearbyList">
+
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
